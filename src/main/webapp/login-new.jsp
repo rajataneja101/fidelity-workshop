@@ -21,7 +21,7 @@
   */ ResultSet rs1 = st.executeQuery("select type from customer where customer_login_name='" + userid + "' and customer_login_password='" + pwd + "'");
           rs1.next();
           String a=rs1.getString(1);
-          
+          session.setAttribute("userid", userid);
           
     //String a=rs1.getString("account");
     if(a.equals("admin"))

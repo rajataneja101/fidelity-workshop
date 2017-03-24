@@ -1,12 +1,3 @@
-<%
-if(session.getAttribute("userid")==null)
-       {
-    response.sendRedirect("login-new.jsp");
-}
-response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
-response.setHeader("Pragma","no-cache");
-response.setDateHeader("Expires", 0);
-%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 
 <tiles:insertDefinition name="adminTemplate">
@@ -15,7 +6,7 @@ response.setDateHeader("Expires", 0);
 
 
 		<div class="body">
-			<h1>Welcome Admin!</h1>
+			<h1>About page !</h1>
 		</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
