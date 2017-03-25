@@ -39,15 +39,23 @@
 					<button class="dropbtn">User Management</button>
 					<div class="dropdown-content">
 						<a href="change-user.jsp">Set User as Admin</a>
+                                                <a href="change-admin.jsp">Set Admin as User</a>
 						<a href="delete-user.jsp">Delete User</a>
-                       
 						<a href="#">Link Users to household</a>
 					</div>
 				  </div>
 	            </li>
                     <li><form  action="stockmaster.jsp"  ><button type="submit" class="dropbtn">Stock Management</button></form>
                     </li>
-	            <li><button class="dropbtn" onclick="manageFunds.jsp">Manage Funds</button></li>
+                    <li>
+                    <div class="dropdown">
+					<button class="dropbtn">Manage Funds</button>
+					<div class="dropdown-content">
+						<a href="manageFunds.jsp">Credit Funds</a>
+						<a href="manageFunds.jsp">Debit Funds</a>
+					</div>
+				  </div>
+                    </li>
                     <li><button id="loginbutton" onclick="location.href='/tradr/logout.jsp'">Logout</button></li>
                         </ul>
 		

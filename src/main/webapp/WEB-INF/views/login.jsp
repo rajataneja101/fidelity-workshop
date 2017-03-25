@@ -114,7 +114,9 @@
 <h3>Login Page</h3>
 		
 		<body>
+                    
                     <form align="center" action="login-new.jsp" method="post">
+               
                         <label>
                             User Name:</label><input type="text" name="uname" size="20"><br><br>
                             <label>

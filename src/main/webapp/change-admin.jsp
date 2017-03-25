@@ -7,6 +7,7 @@ if(session.getAttribute("userid")==null)
 response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
 response.setHeader("Pragma","no-cache");
 response.setDateHeader("Expires", 0);
+String userid=(String)session.getAttribute("userid");
 %>
 <%@ page import ="java.sql.*" %>
 <%@page import="java.sql.DriverManager"%>
@@ -34,7 +35,7 @@ ResultSet resultSet = null;
 %>
 
 
-<h2 align="center"><font><strong>Users</strong></font></h2>
+<h2 align="center"><font><strong>Admin</strong></font></h2>
 <table  class="table table-hover">
 <tr>
 
@@ -55,7 +56,7 @@ try{
       
 connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
 statement=connection.createStatement();
-String sql ="SELECT * FROM customer where TYPE='admin'";
+String sql ="SELECT * FROM customer where TYPE='admin' and CUSTOMER_LOGIN_NAME !='"+userid+"'";
 
 resultSet = statement.executeQuery(sql);
 

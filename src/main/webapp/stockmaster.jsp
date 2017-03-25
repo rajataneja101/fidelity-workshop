@@ -89,17 +89,6 @@ padding-bottom:100px;
          </nav>
       </header>
       
-          <div class="footer">
-         <div class="line">
-            <div class="s-12 l-6">
-               <p>Thanks for beliving on us!</p>
-               <p>We love you!</p>
-            </div>
-            <div class="s-12 l-6">
-               <a class="right" href="#" title="Responsee - lightweight responsive framework">Design and coding<br> by Team Paradox</a>
-            </div>
-         </div>
-          </div>
 
 <%@ page import ="java.sql.*" %>
 <%@page import="java.sql.DriverManager"%>
@@ -175,7 +164,12 @@ e.printStackTrace();
         <h3>Add Stocks</h3>
         <input type="text" name="s_name"  placeholder="Stock Name">
         <input type="text" name="s_sym" placeholder="Stock Symbol">
-        <input type="text" name="s_ind" placeholder="Stock Industry">
+        <select name="s_ind">
+            <option value="Technology">Technology</option>
+            <option value="Investments">Investments</option>
+            <option value="Internet Security">Internet Security</option>
+            <option value="Retail Stores">Retail Stores</option>
+        </select>
         <input type="text" name="s_val" placeholder="Stock Validity">
         <button type="submit" id="addbtn" type="button" >Add Stock</button>
       </form>
