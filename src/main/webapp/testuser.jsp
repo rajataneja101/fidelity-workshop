@@ -36,11 +36,7 @@ ResultSet resultSet = null;
 
 <h2 align="center"><font><strong>Users</strong></font></h2>
 <table  class="table table-hover">
-<tr>
-
-</tr>
-<tr>
-
+<tr style="background-color:#45543D">
 <td><b>CUSTOMER_LOGIN_NAME</b></td>
 <td><b>INVESTOR_TRADER</b></td>
 <td><b>HOUSEHOLD_ID</b></td>
