@@ -284,16 +284,26 @@ ResultSet resultSet = null;
 				  <div class="dropdown">
 					<button class="dropbtn">User Management</button>
 					<div class="dropdown-content">
-						<a href="selectadmin.jsp">Set User as Admin</a>
-						<a href="deleteuser.jsp">Delete User</a>
-						<a href="linktohousehold.jsp">Link Users to household</a>
+						<a href="change-user.jsp">Set User as Admin</a>
+                                                <a href="change-admin.jsp">Set Admin as User</a>
+						<a href="delete-user.jsp">Delete User</a>
+						<a href="household.jsp">Link Users to household</a>
 					</div>
 				  </div>
 	            </li>
-	            <li><button class="dropbtn" onclick="stock_management.jsp">Stock Management</button></li>
-	            <li><button class="dropbtn" onclick="manageFunds.jsp">Manage Funds</button></li>
-			<li><i class="fa fa-sign-out fa-large" aria-hidden="true" style="color:white; padding-top:11px; padding-left:11px; font-size:24px; "></i></li>
-			</ul>
+                    <li><form  action="stockmaster.jsp"  ><button type="submit" class="dropbtn">Stock Management</button></form>
+                    </li>
+                    <li>
+                    <div class="dropdown">
+					<button class="dropbtn">Manage Funds</button>
+					<div class="dropdown-content">
+						<a href="manageFunds.jsp">Credit Funds</a>
+						<a href="manageFunds.jsp">Debit Funds</a>
+					</div>
+				  </div>
+                    </li>
+                    <li><button id="loginbutton" onclick="location.href='/tradr/logout.jsp'">Logout</button></li>
+                        </ul>
 
 		</div>
 	</div>

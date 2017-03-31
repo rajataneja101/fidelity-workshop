@@ -41,7 +41,7 @@
 						<a href="change-user.jsp">Set User as Admin</a>
                                                 <a href="change-admin.jsp">Set Admin as User</a>
 						<a href="delete-user.jsp">Delete User</a>
-						<a href="#">Link Users to household</a>
+						<a href="household.jsp">Link Users to household</a>
 					</div>
 				  </div>
 	            </li>
