@@ -21,8 +21,14 @@
   */ ResultSet rs1 = st.executeQuery("select type from customer where customer_login_name='" + userid + "' and customer_login_password='" + pwd + "'");
           rs1.next();
           String a=rs1.getString(1);
-          session.setAttribute("userid", userid);
+         // session.setAttribute("userid", userid);
           
+          
+          ResultSet rs2 = st.executeQuery("select customer_id from customer where customer_login_name='" + userid + "' and customer_login_password='" + pwd + "'");
+          rs2.next();
+          String b=rs2.getString(1);
+          //out.print(b);
+          session.setAttribute("userid", b);
     //String a=rs1.getString("account");
     if(a.equals("admin"))
                  {
@@ -33,7 +39,7 @@
                {
         response.sendRedirect("user.jsp");
       }
-                  
+                
              }
     else 
     {
